@@ -1,0 +1,591 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Merienda:wght@700&family=Monoton&family=Neuton:wght@300&family=Philosopher&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&family=Qahiri&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Philosopher';
+
+}
+#header{
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    margin-right: 100px;
+    margin-left: 54px;
+}
+.logo{
+    width: 300px;
+    border-radius: 30px;
+    display: block;
+    padding-top: 20px;
+}
+.logo_mobile{
+    display: none;
+}
+.header-text{
+    max-width: 35vw;
+    margin-top: 40px;
+}
+.header-text ul li{
+    font-size: 20px;
+    /* font-weight: bold; */
+    /* font-family: 'Rye', cursive; */
+}
+h1{
+    font-size: 34px;
+    text-transform: uppercase;
+    /* font-family: 'Merienda', cursive; */
+    font-family: 'Yeseva One', cursive;
+    font-family: 'Monoton', cursive;
+    color: #f67c92;
+}
+h2{
+    font-family: 'Philosopher', sans-serif;
+}
+.square{
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    background: #f67c92;
+    margin: 15px 0;
+}
+.common-btn{
+    padding: 18px 40px;
+    background: transparent;
+    outline: none;
+    border: 2px solid #f67c92;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 15px;
+    transition: 0.3s;
+}
+.common-btn:hover{
+    background-color: #f67c92;
+    color: #fff;
+    transition: 0.3s;
+}
+p{
+    padding-top: 20px;
+    font-size: 20px;
+    line-height: 18px;
+    color: #777;
+    font-family: 'Neuton', serif;
+    text-align: justify;
+}
+.header-text button{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.line-1{
+    width: 15px;
+    height: 15px;
+    background: #f67c92;
+    display: inline-block;
+}
+.line-2{
+    width: 80px;
+    height: 1px;
+    background: #f67c92;
+    display: inline-block;
+}
+.line-3{
+    width: 60px;
+    height: 1px;
+    background: #f67c92;
+    display: inline-block;
+}
+.line{
+    line-height: 8px;
+
+}
+
+
+/* Nav bar */
+#sideNav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: #f67c92;
+    z-index: 2;
+    transition: 0.3s ;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 44px 1px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+nav ul ul{
+    position: static;
+    display: none;
+}
+nav ul ul li a{
+    line-height: 10px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+nav ul li  span{
+    position: absolute;
+    left: 43%;
+    transition: 2s;
+    font-size: 1rem;
+}
+nav ul .dropdown{
+    position: relative;
+    /* padding: 20px; */  
+}
+nav ul .dropdown:hover{
+    transition: 2s;
+}
+nav ul li:hover > ul{
+    display: block;
+}
+
+nav ul li a:hover{
+    background: rgb(0, 0, 0, white);
+    /* text-decoration: underline; */
+    color: #fff;
+}
+#menuBtn{
+    width: 50px;
+    position: fixed;
+    right: 65px;
+    top: 35px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+
+/* about css */
+#about ,#offer{
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-left-column{
+    flex-basis:50% ;
+}
+.about-left-column img{
+    width: 100%;
+}
+.about-right-column {
+    flex-basis: 50%;
+    text-align: right;
+}
+.about-text{
+    max-width: 40vw;
+    margin-right: 100px;
+    display: inline-block;
+}
+.about-text h3{
+    /* margin: 50px 0 10px ; */
+    font-size: 20px;
+    font-style: italic;
+    color: #777;
+}
+.about-text  a {
+    text-decoration: none;
+    color: black;
+}
+.about-text h3 {
+    margin-bottom: 36px;
+}
+
+
+
+/* Features style */
+#features{
+    padding: 40px 0;
+    transition: 2s;
+}
+.features_div{
+    padding-top:20px ;
+}
+#features .fea{
+    text-align: center;
+    color: #f67c92;
+
+    font-weight: bolder;
+    font-size: 35px;
+    font-family: 'Monoton', cursive;
+}
+.feature-row{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 45px;
+}
+.feature-col{
+    flex-basis: 35%;
+    text-align: center;
+    margin: 23px 31px;
+    padding: 30px;
+    padding-bottom: 50px;
+    box-shadow: inset 3px 5px 10px #fab3c4;
+    transition: all 1s ease;
+}
+.feature-col:hover{
+    transform: translateY(-5%);
+    cursor: pointer;
+}
+
+.feature-col img{
+    width: 100px;
+}
+.feature-col a{
+    text-decoration: none;
+    color: black;
+    padding-top: 14px;
+}
+.feature-col p{
+    margin-bottom: 60px;
+
+}
+.feature-col .speech{
+    width: 130px;
+}
+.feature-col h4{
+    margin: 15px;
+    font-size: 20px;
+    font-weight: 400px;
+
+}
+.feature-btn{
+    margin: 30px auto 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.feature-btn .line{
+    text-align: right;
+    display: inline-block;
+    margin-right: 25px;
+    margin-left: -118px;
+}
+.feature-btn a{
+    text-decoration: none;
+    color: black;
+}
+.fea-btn{
+    padding: 15px 15px ;
+    margin-bottom: 20px;
+}
+
+
+
+
+/* Courses id */
+#courses{
+    padding:50px 0;
+
+}
+.course-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.course-right-col{
+    flex-basis: 50%;
+}
+.course-right-col img{
+    width: 100%;
+}
+.course-left-col{
+    flex-basis: 50%;
+}
+.course-text{
+    max-width: 40vw;
+     /* text-align: justify; */
+}
+.course-text p{
+    max-width: 40vw;
+    text-align: justify;
+}
+.course-text button{
+    margin: 30px 0;
+    
+}
+/* offer style */
+#offer button{
+    margin: 30px 0;
+
+}
+
+/* contact style */
+#contact{
+    padding-top: 50px ;
+}
+.contact-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contact-left-col , .contact-right-col{
+    flex-basis: 50%;
+}
+.contact-right-col img{
+    width: 100%;
+}
+form{
+    max-width: 40vw;
+    margin: 30px 0;
+}
+form input{
+    width: 100%;
+    padding: 12px 10px;
+    margin-bottom: 5px;
+    outline: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    border: 2px solid #fab3c4;
+    justify-content: center;
+}
+.btn-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.btn-box button{
+    flex-basis: 48%;
+    padding: 18px 0;
+}
+
+
+
+/* Footer style */
+.footer-basic {
+    margin-top: 50px;
+    padding:40px 0;
+    background-color:#ffffff;
+    color:#f67c92;
+  }
+  hr{
+    width: 90%;
+    border: 0;
+    border-top: 1px solid #f67c92;
+    margin-bottom: 50px;
+}
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-content: center;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:1px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #fab3c4;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#bbb;
+    margin-bottom:0;
+    opacity: 1;
+  }
+  
+
+
+
+
+
+
+/* Social-icons */
+.social-icons{
+    width: 50px;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.social-icons img{
+    display: block;
+    width: 20px;
+    margin: 0 auto 20px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+.social-icons img:hover{
+    transform: translateY(-5px);
+}
+
+
+@media only screen and (max-width:750px){
+    #header{
+        background-image: none;
+    }
+    .container{
+        margin-right: 50px;
+        margin-left: 50px;
+    
+    }
+    .logo{
+        padding-top: 20px;
+        width: 250px;
+    }
+    .header-text{
+        font-size: 20px;
+        max-width: 99%;
+        margin-top: 45px;
+        text-align: justify;
+    }
+    h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    h2{
+        font-size: 20px;
+        text-align: center;
+
+    }
+    .course-text{
+        font-size: 20px;
+        max-width: 100%;
+        margin-top: 45px;
+        text-align: justify;
+    }
+    .course-text p{
+        max-width: 100%;
+        text-align: justify;
+    }
+    #menuBtn{
+        width: 40px;
+        right: 50px;
+        
+    }
+    .common-btn{
+        padding: 10px 16px;
+        
+    }
+    .social-icons img{
+        width: 14px;
+        margin: 15px auto;
+    }
+    .about-left-column,.about-right-column{
+        flex-basis:100% ;
+    }
+    
+    .about-text{
+        margin: 50px 50px 0;
+        display: inline-block;
+        font-size: 20px;
+        max-width: 99%;
+        margin-top: 45px;
+        text-align: justify;
+    }
+    /* .about-text h1{
+         font-size: 15px;
+    } */
+    .feature-col{
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    form{
+        max-width: 100vw;
+        margin: 30px 0;
+    }
+    .course-left-col{
+        flex-basis: 100%;
+    }
+    .course-right-col{
+        flex-basis: 100%;
+        margin-top: 70px;
+    }
+    .contact-left-col , .contact-right-col{
+        flex-basis: 100%;
+    }
+    .contact-right-col{
+        margin-top: 70px;
+    }
+    .link-title{
+        flex-basis: 50%;
+        margin-bottom: 30px;
+    }
+    form input{
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (max-width:420px){
+    .logo{
+        display: none;
+    }
+    .logo_mobile{
+       display: block;
+       padding-top: 25px;
+       width: 100px;
+    }
+    #menuBtn{
+        width: 30px;
+    }
+}
+@media only screen and (max-width:320px){
+    .logo_mobile{
+       width: 80px;
+    }
+}
+
+
+
+
+
+
+

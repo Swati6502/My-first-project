@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Philosopher';
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-position: center;
+    background-size: cover;
+}
+
+h1{
+    font-size: 34px;
+    text-transform: uppercase;
+    font-family: 'Rye', cursive;
+    color: #eb5f79;
+    margin-left: -100px;
+    margin-bottom: 40px;
+    /* margin-right: 0px; */
+}
+.line-1{
+    width: 15px;
+    height: 15px;
+    background: #f67c92;
+    display: inline-block;
+    margin-top: 6px;
+    margin-left: -395px;
+}
+.line-2{
+    width: 80px;
+    height: 2px;
+    background: #f67c92;
+    display: inline-block;
+    margin-left: -333px;
+}
+.line-3{
+    width: 60px;
+    height: 2px;
+    background: #f67c92;
+    display: inline-block;
+    margin-left: -352px;
+}
+.line{
+    line-height: 8px;
+}
+
+h3{
+    font-family: 'Baloo Bhai 2', cursive;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+
+
+button{
+    font-family: 'Qahiri', sans-serif;
+    padding: 23px;
+    padding-top: 0;
+    background: transparent;
+    border-radius: none;
+    outline: none;
+    border: 2px solid #f67c92;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+}
+button:hover{
+    background-color: #eed0d5;
+    color: black;
+    border: 2px dashed black;
+}
+button:focus {
+    outline: 0;
+}
+
+.container {
+    max-width: 700px;
+    /* margin: 0 auto; */
+    margin-right: 100px;
+    margin-left: -93px;
+    padding: 100px 50px;
+    text-align: center;
+}
+
+/* .container h1 {
+    margin-bottom: 20px;
+} */
+
+.page-description {
+    font-size: 1.1rem;
+    margin-top: 30px;
+    margin-left: -50px;
+}
+
+ p {
+    color: #444;
+    font-family: 'Otomanopee One', sans-serif;
+    /* text-align: center; */
+    
+}
+
+.tz-link {
+    font-size: 1em;
+    color: #1da7da;
+    text-decoration: none;
+}
+
+.no-browser-support {
+    display: none;
+    font-size: 1.2rem;
+    color: #e64427;
+    margin-top: 35px;
+}
+
+.app {
+    margin: 40px auto;
+}
+
+#note-textarea {
+    margin: 20px 0;
+    font-family: 'Baloo Bhai 2', cursive;
+    border:2px dashed pink;
+}
+
+#recording-instructions {
+    margin: 15px auto 60px;
+}
+
+#notes {
+    padding-top: 20px;
+}
+
+.note .header {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.note .delete-note,
+.note .listen-note {
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.note .content {
+    margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 50px 25px;
+    }
+
+    button {
+        margin-bottom: 10px;
+    }
+
+}   
+
+
+
+/* -- Demo ads -- */
+
+@media (max-width: 1200px) {
+    #bsaHolder{ display:none;}
+}

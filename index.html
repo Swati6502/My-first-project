@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR Analysis</title>
+    <link rel="stylesheet" href="style_project.css">
+
+    <!-- Scrolling effect -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    
+    <!-- Icons and fonts-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&family=Rye&display=swap" rel="stylesheet">
+
+    <!-- Pop up image -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.0/jquery.fancybox.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.0/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.0/jquery.fancybox.min.css">
+
+</head>
+<body>
+    
+    <div id="front">
+    <section id="header">
+        <div class="container">
+            <img src="images/Rect_logo.png" class="logo" >
+            <img src="images/Square_logo copy.png" class="logo_mobile" >
+
+            <div class="header-text">
+                <h1>Online OCR Analysis<br> </h1>
+                    <ul>
+                        <li>Convert images to text</li>
+                        <li>Convert speech to text</li>
+                    </ul>
+                <!-- <span class="square"></span> -->
+                <p>Optical character recognition (OCR) technology is a business solution for automating data extraction from printed or written text from a scanned document or image file and then converting the text into a machine-readable form to be used for data processing like editing or searching.</p>
+                <p>Speech recognition, also known as automatic speech recognition (ASR), computer speech recognition, or speech-to-text, is a capability which enables a program to process human speech into a written format.</p>
+                <button class="common-btn">Read more</button>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+
+    <!-- Nav Bar -->
+    <nav id="sideNav">
+        <ul>
+            <li><a href="#header">HOME</a></li>
+            <li class="dropdown"><a href="#features">FEATURES <span class="fa fa-caret-down"></span></a>
+                <ul>
+                    <li><a href="ocr.php">IMAGE-TO-TEXT</a></li>
+                    <li><a href="speech.php">SPEECH-TO-TEXT</a></li>
+                </ul>
+            </li>
+            <li><a href="#about">OUR TEAM</a></li>
+
+            <form action="register_login.php" method="POST">
+                <li><button 
+                    style="padding-top: 100px; 
+                    padding: 10px;
+                    outline: none;
+                    background-color: #f67c92;
+                    border: none;
+                    margin-left: -9;
+                    margin: -19px -10px;
+                    cursor: pointer;
+                    font-family: 'Philosopher', sans-serif;
+                    font-size: 16px;" 
+                    
+                    onmouseover="this.style.color='white'" onmouseout="this.style.color='black'"
+
+                    id="form-btn" type="submit" >SIGN UP/ LOG IN
+                </button></li>
+            </form>
+
+            <form action="logout.php" method="POST">
+                <li><button 
+                    style = "padding-top: 100px; 
+                    padding: 10px;
+                    outline: none;
+                    background-color: #f67c92;
+                    border: none;
+                    margin-left: -9;
+                    margin: -19px -10px;
+                    cursor: pointer;
+                    font-family: 'Philosopher', sans-serif;
+                    font-size: 16px;" 
+
+                    onmouseover="this.style.color='white'" onmouseout="this.style.color='black'"
+                    
+                    id="form-btn" type="submit">LOG OUT
+                </button></li>
+            </form>
+
+            <form action="feedback.php" method="POST">
+                <li><button 
+                    style = "padding-top: 100px; 
+                    padding: 10px;
+                    outline: none;
+                    background-color: #f67c92;
+                    border: none;
+                    margin-left: -9;
+                    margin: -19px -10px;
+                    cursor: pointer;
+                    font-family: 'Philosopher', sans-serif;
+                    font-size: 16px;" 
+
+                    onmouseover="this.style.color='white'" onmouseout="this.style.color='black'"
+                    
+                    id="form-btn" type="submit">RATE US
+                </button></li>
+            </form>
+
+        </ul>
+    </nav>
+    <img src="images/menu.png" id="menuBtn">
+
+
+
+    <!-- Features section  -->
+    <section id="features">
+        <div class="features_div">
+            <H1 class="fea"> Features:</H1>
+            <div class="feature-row">
+                <div class="feature-col">
+                    <img src="images/pic-1.png" >
+                    <h4>Image-to-Text Converter</h4>
+                    <p>A technology that recognizes text within a digital
+                        image.</p>
+                    <a href="ocr.php" target="_blank" class="common-btn fea-btn" target="_blank">Click here</a>
+                </div>
+                <div class="feature-col">
+                    <img src="images/speech-to-text.png"class="speech" >
+                    <h4>Speech-to-Text Converter</h4>
+                    <p>A software program that can detect and convert speech to text. </p>
+                    <a href="speech.php" target="_blank" class="common-btn fea-btn" target="_blank">Click here</a>
+                </div>
+               
+            </div>
+            <div class="feature-btn">
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
+
+                <!-- Flowchart -->
+                <a data-fancybox="gallery" href="images/Workflow_of_website.jpg" alt="Workflow_of_website"  id="flowchart" class="common-btn primary-btn">Learn How to use</a>
+
+            </div>
+        </div>
+    </section>
+
+
+
+      <!-- About -->
+      <section id="about">
+        <div class="about-left-column">
+            <img src="images/about.png" >
+        </div>
+        <div class="about-right-column">
+            <div class="about-text">
+                <h1>OUR TEAM</h1>
+                <span class="square"></span>
+                <p>A team is a group of people who work together toward a common goal. Teams have defined membership (which can be either large or small) and a set of activities to take part in.People on a team collaborate on sets of related tasks that are required to achieve an objective. 
+                </p><br><br>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
+                <h2>“Talent wins games, but teamwork and intelligence win championships.”
+                </h2>
+                <h3>----Michael Jordan</h3>
+                <a href="about.html" target="_blank" class="common-btn" target="_blank">More about us</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- footer -->
+    <div class="footer-basic">
+        <footer>
+            <hr>
+            <div class="social">
+                <a href="https://www.instagram.com" target="_blank"><i class="icon ion-social-instagram"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="icon ion-social-linkedin"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="icon ion-social-twitter"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="icon ion-social-facebook"></i></a>
+            </div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="index.html">Home</a></li>
+                <li class="list-inline-item"><a href="#features">Services</a></li>
+                <li class="list-inline-item"><a href="about.html">About</a></li>
+                <li class="list-inline-item"><a href="#features">Features</a></li>
+                <li class="list-inline-item"><a href="feedback.php">Rate us</a></li>
+            </ul>
+            <p class="copyright">OCR Analysis © 2021</p>
+        </footer>
+    </div>
+
+
+
+
+<!-- Social icons -->
+<div class="social-icons">
+    <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" ></a>
+    <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" ></a>
+    <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" ></a>
+    <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.png" ></a>
+</div>
+
+
+
+
+    <!-- Javascript -->
+    <script>
+        // hamberg navbar--javascript
+        var menuBtn=document.getElementById("menuBtn");
+        var sideNav=document.getElementById("sideNav");
+        sideNav.style.right="-250px";
+        menuBtn.onclick=function(){
+            if(sideNav.style.right=="-250px"){
+                sideNav.style.right="0";
+            }
+            else{
+                sideNav.style.right="-250px";
+            }
+        }
+        
+
+
+        // Scrolling smooth effect
+	    var scroll = new SmoothScroll('a[href*="#"]',{
+            speed:1000,
+            speedAsDuration:true
+        });
+    
+
+
+    </script>
+</body>
+</html>
